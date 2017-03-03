@@ -9,4 +9,4 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
         && echo 'ZSH_THEME="remy"'  >> ~/.zshrc \
         && echo '[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color' >> ~/.zshrc
 
-
+RUN /bin/bash -c "cd /www && npm install -g notify-send gulp node-sass"
