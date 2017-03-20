@@ -10,3 +10,5 @@ RUN git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
         && echo '[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color' >> ~/.zshrc
 
 RUN /bin/bash -c "cd /www && npm install -g notify-send gulp node-sass"
+RUN npm rebuild node-sass 
+RUN npm rebuild node-gyp
